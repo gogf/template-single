@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eros-template
+  name: template-single
   labels:
-    app: eros-template
+    app: template-single
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eros-template
+      app: template-single
   template:
     metadata:
       labels:
-        app: eros-template
+        app: template-single
     spec:
       containers:
         - name : main
-          image: eros-template
+          image: template-single
           imagePullPolicy: Always
 
