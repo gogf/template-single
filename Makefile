@@ -1,7 +1,6 @@
 ROOT_DIR    = $(shell pwd)
 NAMESPACE   = "default"
 DEPLOY_NAME = "template-single"
-DEPLOY_PORT = "8888"
 DOCKER_NAME = "template-single"
 
 # Install/Update to the latest CLI tool.
