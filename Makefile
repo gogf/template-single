@@ -71,4 +71,12 @@ deploy:
 	kubectl   apply -f $(ROOT_DIR)/temp/kustomize.yaml; \
 	kubectl   patch -n $(NAMESPACE) deployment/$(DEPLOY_NAME) -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"$(shell date +%s)\"}}}}}";
 
+# Parsing protobuf files and generating go files.
+.PHONY: pb
+pb: cli.install
+	@gf gen pb
 
+# Generate protobuf files for database tables.
+.PHONY: pbentity
+pbentity: cli.install
+	@gf gen pbentity
