@@ -110,7 +110,7 @@ logger:
 #     charset:               "(可选)数据库编码(如: utf8/gbk/gb2312)，一般设置为utf8"
 #     protocol:              "(可选)数据库连接协议，默认为TCP"
 #     weight:                "(可选)负载均衡权重，用于负载均衡控制，不使用应用层的负载均衡机制请置空"
-#     timezone:              "(可选)时区配置，例如:local"
+#     timezone:              "(可选)时区配置，例如:Local"
 #     namespace:             "(可选)用以支持个别数据库服务Catalog&Schema区分的问题，原有的Schema代表数据库名称，而NameSpace代表个别数据库服务的Schema"
 #     maxIdle:               "(可选)连接池最大闲置的连接数(默认10)"
 #     maxOpen:               "(可选)连接池最大打开的连接数(默认无限制)"
