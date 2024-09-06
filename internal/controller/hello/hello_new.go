@@ -5,7 +5,7 @@
 package hello
 
 import (
-	"${Module_Name}/api/hello"
+	"github.com/gogf/template-single/api/hello"
 )
 
 type ControllerV1 struct{}
@@ -13,3 +13,4 @@ type ControllerV1 struct{}
 func NewV1() hello.IHelloV1 {
 	return &ControllerV1{}
 }
+

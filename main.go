@@ -1,11 +1,11 @@
 package main
 
 import (
-	_ "${Module_Name}/internal/packed"
+	_ "github.com/gogf/template-single/internal/packed"
 
 	"github.com/gogf/gf/v2/os/gctx"
 
-	"${Module_Name}/internal/cmd"
+	"github.com/gogf/template-single/internal/cmd"
 )
 
 func main() {

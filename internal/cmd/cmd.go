@@ -7,7 +7,7 @@ import (
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/os/gcmd"
 
-	"${Module_Name}/internal/controller/hello"
+	"github.com/gogf/template-single/internal/controller/hello"
 )
 
 var (
