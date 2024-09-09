@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: template-single
+  name: ${MODULE_NAME}
   labels:
-    app: template-single
+    app: ${MODULE_NAME}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: template-single
+      app: ${MODULE_NAME}
   template:
     metadata:
       labels:
-        app: template-single
+        app: ${MODULE_NAME}
     spec:
       containers:
         - name : main
-          image: template-single
+          image: ${MODULE_NAME}
           imagePullPolicy: Always
 

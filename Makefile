@@ -1,6 +1,6 @@
 ROOT_DIR    = $(shell pwd)
 NAMESPACE   = "default"
-DEPLOY_NAME = "template-single"
-DOCKER_NAME = "template-single"
+DEPLOY_NAME = "${MODULE_NAME}"
+DOCKER_NAME = "${MODULE_NAME}"
 
 include ./hack/hack.mk
